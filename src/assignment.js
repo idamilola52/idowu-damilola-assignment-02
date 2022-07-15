@@ -17,9 +17,10 @@ function sumOfNumbers(arrayOfNumbers) {
   let sum = 0; 
 
   //loop over array and add each item to sum
-  for (const item of arrayOfNumbers) {
-    sum += item;
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    sum += arrayOfNumbers[i];
   }
+  return sum;
  return arrayOfNumbers.length;
 }
 assignment.sumOfNumbers = sumOfNumbers;
@@ -40,6 +41,7 @@ function countEvenNumbers(arrayOfNumbers) {
           count++;
         }
       }
+  return count;
   return arrayOfNumbers.length;
 }
 assignment.countEvenNumbers = countEvenNumbers;
