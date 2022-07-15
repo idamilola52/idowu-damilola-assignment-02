@@ -64,15 +64,12 @@ assignment.countEvenNumbers = countEvenNumbers;
 function celsiusToFahrenheit(arrayOfNumbers) {
   let arrayFahrenheit = [];
   let temp = 0;
-  for (const item of arrayOfNumbers){
-    //converting celcius-to-farenheit-formula
-    //formula is (C * 9/5) + 32
-    //saving the new into the new array
-    temp = Math.trunc((item * 9/5) + 32)
+  for (let i = 0 ; i < arrayOfNumbers.length; i++){
+  
+    temp = Math.trunc((arrayOfNumbers[i] * 9/5) + 32)
     arrayFahrenheit.push(temp);
   }
-   console.log(arrayFahrenheit);
-    return arrayOfNumbers;
+    return arrayFahrenheit;
 }
  assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
