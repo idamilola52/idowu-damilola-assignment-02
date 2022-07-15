@@ -20,10 +20,7 @@ function sumOfNumbers(arrayOfNumbers) {
   for (const item of arrayOfNumbers) {
     sum += item;
   }
- 
- // return the result 
-  console.log(sum); 
-  return sum;
+ return arrayOfNumbers.length;
 }
 assignment.sumOfNumbers = sumOfNumbers;
 
@@ -43,7 +40,7 @@ function countEvenNumbers(arrayOfNumbers) {
           count++;
         }
       }
-    return count;
+  return arrayOfNumbers.length;
 }
 assignment.countEvenNumbers = countEvenNumbers;
 
